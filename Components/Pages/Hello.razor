@@ -1,0 +1,12 @@
+﻿@page "/hello"
+@rendermode InteractiveServer
+
+<h1>Hello 👋</h1>
+
+<input @bind="name" placeholder="Enter your name" />
+
+<p>Hello, @name!</p>
+
+@code {
+    private string name = "";
+}
